@@ -1,6 +1,8 @@
 import { Shield, Zap, Globe, Download } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function ShieldApp() {
+  const { t } = useTranslation();
   return (
     <div className="pb-20">
       <div className="bg-accent-green/10 border-b border-white/[0.05] pt-12 pb-16 px-4 text-center relative overflow-hidden backdrop-blur-sm">
@@ -13,7 +15,7 @@ export default function ShieldApp() {
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-md">Best Games & Shield</h1>
           <p className="text-lg text-text-secondary max-w-lg mx-auto mb-8 font-medium">
-            Oyun deneyiminizi bir üst seviyeye taşıyın. Oyun hızlandırma, gecikme (ping) düşürme ve güvenli DNS özellikleriyle tanışın.
+            {t('shield.subtitle', 'Oyun deneyiminizi bir üst seviyeye taşıyın. Oyun hızlandırma, gecikme (ping) düşürme ve güvenli DNS özellikleriyle tanışın.')}
           </p>
           <a 
             href="https://play.google.com/store/apps/details?id=com.bestgames.shield" 
@@ -23,7 +25,7 @@ export default function ShieldApp() {
           >
             <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:animate-[shine_1.5s_ease-in-out_infinite] skew-x-[-20deg]"></div>
             <Download className="w-6 h-6 relative z-10" strokeWidth={2.5} />
-            <span className="relative z-10">Hemen İndir</span>
+            <span className="relative z-10">{t('shield.download', 'Hemen İndir')}</span>
           </a>
         </div>
       </div>
@@ -31,18 +33,18 @@ export default function ShieldApp() {
       <div className="max-w-4xl mx-auto px-4 py-16 grid sm:grid-cols-3 gap-6">
         <FeatureCard 
           icon={Zap}
-          title="Oyun Hızlandırıcı (Game Booster)"
-          desc="Arka plandaki gereksiz uygulamaları kapatarak oyunlarınız için maksimum RAM ve işlemci performansı sağlar. FPS düşüşlerine son verin."
+          title={t('shield.f1_title', 'Oyun Hızlandırıcı (Game Booster)')}
+          desc={t('shield.f1_desc', 'Arka plandaki gereksiz uygulamaları kapatarak oyunlarınız için maksimum RAM ve işlemci performansı sağlar. FPS düşüşlerine son verin.')}
         />
         <FeatureCard 
           icon={Globe}
-          title="DNS Değiştirici & Ping Düşürücü"
-          desc="Oyun sunucularına en hızlı ve güvenli yoldan bağlanın. Optimize edilmiş oyuncu DNS'leri ile gecikme süresini (ping) minimuma indirin."
+          title={t('shield.f2_title', 'DNS Değiştirici & Ping Düşürücü')}
+          desc={t('shield.f2_desc', "Oyun sunucularına en hızlı ve güvenli yoldan bağlanın. Optimize edilmiş oyuncu DNS'leri ile gecikme süresini (ping) minimuma indirin.")}
         />
         <FeatureCard 
           icon={Shield}
-          title="Güvenli Bağlantı (Shield)"
-          desc="Kötü amaçlı yazılımları, izleyicileri ve rahatsız edici içerikleri engelleyen özel filtreleme sistemi ile güvende kalın."
+          title={t('shield.f3_title', 'Güvenli Bağlantı (Shield)')}
+          desc={t('shield.f3_desc', 'Kötü amaçlı yazılımları, izleyicileri ve rahatsız edici içerikleri engelleyen özel filtreleme sistemi ile güvende kalın.')}
         />
       </div>
     </div>

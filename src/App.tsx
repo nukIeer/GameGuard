@@ -7,6 +7,7 @@ const GameDetail = lazy(() => import('./pages/GameDetail'));
 const Favorites = lazy(() => import('./pages/Favorites'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const ShieldApp = lazy(() => import('./pages/ShieldApp'));
+const Search = lazy(() => import('./pages/Search'));
 const Privacy = lazy(() => import('./pages/legal/Privacy'));
 const Terms = lazy(() => import('./pages/legal/Terms'));
 const Kvkk = lazy(() => import('./pages/legal/Kvkk'));
@@ -21,6 +22,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="game/:slug" element={<GameDetail />} />
           <Route path="favorites" element={<Favorites />} />
+          <Route path="search" element={<Search />} />
           <Route path="shield" element={<ShieldApp />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />

@@ -4,6 +4,13 @@
     "subtitle": "Best Games & Shield",
     "searchPlaceholder": "Search games..."
   },
+  "search": {
+    "placeholder": "Search games...",
+    "start": "Start Searching",
+    "startDesc": "Search by game name, category, or developer",
+    "noResults": "No Results Found",
+    "noResultsDesc": "Try different keywords"
+  },
   "home": {
     "filters": {
       "all": "All",

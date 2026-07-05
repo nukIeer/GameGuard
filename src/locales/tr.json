@@ -4,6 +4,13 @@
     "subtitle": "Best Games & Shield",
     "searchPlaceholder": "Oyun ara..."
   },
+  "search": {
+    "placeholder": "Oyun ara...",
+    "start": "Aramaya Başlayın",
+    "startDesc": "Oyun adı, kategori veya geliştirici arayın",
+    "noResults": "Sonuç Bulunamadı",
+    "noResultsDesc": "Farklı anahtar kelimeler deneyin"
+  },
   "home": {
     "filters": {
       "all": "Tümü",
