@@ -26,7 +26,7 @@ export default function About() {
             Herhangi bir sorunuz, iş birliği teklifiniz veya geri bildiriminiz için bize her zaman ulaşabilirsiniz.
           </p>
           <p>
-            E-posta: <a href="mailto:hello@bestgames.shield">hello@bestgames.shield</a>
+            E-posta: <a href="mailto:trnlab@proton.me">trnlab@proton.me</a>
           </p>
         </>
       ) : (
@@ -47,7 +47,7 @@ export default function About() {
             For any questions, collaboration inquiries, or feedback, feel free to reach out to us at any time.
           </p>
           <p>
-            Email: <a href="mailto:hello@bestgames.shield">hello@bestgames.shield</a>
+            Email: <a href="mailto:trnlab@proton.me">trnlab@proton.me</a>
           </p>
         </>
       )}
