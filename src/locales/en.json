@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Game Market",
+    "subtitle": "Best Games & Shield",
+    "searchPlaceholder": "Search games..."
+  },
+  "home": {
+    "filters": {
+      "all": "All",
+      "top": "Top Sellers",
+      "new": "New Releases",
+      "small": "Small Size"
+    },
+    "download": "Download",
+    "topBadge": "Top"
+  },
+  "detail": {
+    "downloads": "Downloads",
+    "size": "Size",
+    "version": "Version",
+    "android": "Android",
+    "ageRating": "Age Rating",
+    "whatsNew": "What's New",
+    "description": "Description",
+    "screenshots": "Screenshots",
+    "directDownload": "Direct Download",
+    "googlePlay": "Google Play",
+    "galaxyStore": "Galaxy Store",
+    "unavailable": "Unavailable",
+    "unknownTitle": "Unknown Game",
+    "noDescription": "No description available."
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "kvkk": "KVKK Info",
+    "dmca": "DMCA Notice",
+    "about": "About & Contact",
+    "disclaimer": "Not affiliated with or endorsed by the game publishers; all trademarks belong to their respective owners."
+  }
+}

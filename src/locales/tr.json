@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Oyun Marketi",
+    "subtitle": "Best Games & Shield",
+    "searchPlaceholder": "Oyun ara..."
+  },
+  "home": {
+    "filters": {
+      "all": "Tümü",
+      "top": "En İyiler",
+      "new": "Yeni Çıkanlar",
+      "small": "Düşük Boyut"
+    },
+    "download": "İndir",
+    "topBadge": "Top"
+  },
+  "detail": {
+    "downloads": "İndirme",
+    "size": "Boyut",
+    "version": "Sürüm",
+    "android": "Android",
+    "ageRating": "Yaş Sınırı",
+    "whatsNew": "Yenilikler",
+    "description": "Açıklama",
+    "screenshots": "Ekran Görüntüleri",
+    "directDownload": "Hemen İndir",
+    "googlePlay": "Google Play",
+    "galaxyStore": "Galaxy Store",
+    "unavailable": "Mevcut Değil",
+    "unknownTitle": "Bilinmeyen Oyun",
+    "noDescription": "Açıklama bulunmuyor."
+  },
+  "legal": {
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "dmca": "Telif Bildirimi",
+    "about": "Hakkımızda & İletişim",
+    "disclaimer": "Oyun yayıncıları ile bağlantılı değildir veya onlar tarafından desteklenmemektedir; tüm ticari markalar kendi sahiplerine aittir."
+  }
+}

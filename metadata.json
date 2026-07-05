@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Best Games & Shield",
+  "description": "Companion website and download destination for the Best Games & Shield Android app.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
