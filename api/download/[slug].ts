@@ -2,7 +2,7 @@
 // Katalogda (CDN manifest) olmayan oyunlar için özel yönlendirmeler tanımlanabilir.
 
 const CUSTOM_REDIRECTS: Record<string, string> = {
-  roblox: 'https://play.google.com/store/apps/details?id=com.roblox.client.apk?download=1',
+  roblox: 'https://zenodo.org/records/21295817/files/2.727.1199.apk?download=1',
 };
 
 const MANIFEST_URL = 'https://cdn.jsdelivr.net/gh/nukIeer/gameshieldcdn@master/games.json';
