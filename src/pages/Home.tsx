@@ -117,7 +117,10 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <button className="bg-accent-green text-bg-base font-black px-5 py-2.5 rounded-full shadow-lg hover:bg-accent-green-pressed transition-colors">
+                <button
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = `/api/download/${featured.id}`; }}
+                  className="bg-accent-green text-bg-base font-black px-5 py-2.5 rounded-full shadow-lg hover:bg-accent-green-pressed transition-colors"
+                >
                   {t('home.download')}
                 </button>
               </div>
@@ -187,7 +190,10 @@ export default function Home() {
               </div>
               
               {/* Download Button */}
-              <button className="bg-bg-elevated border border-border-strong text-accent-green group-hover:bg-accent-green group-hover:text-bg-base font-bold text-xs px-4 py-1.5 rounded-full transition-colors shrink-0">
+              <button
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = `/api/download/${game.id}`; }}
+                className="bg-bg-elevated border border-border-strong text-accent-green group-hover:bg-accent-green group-hover:text-bg-base font-bold text-xs px-4 py-1.5 rounded-full transition-colors shrink-0"
+              >
                 {t('home.download')}
               </button>
             </Link>
