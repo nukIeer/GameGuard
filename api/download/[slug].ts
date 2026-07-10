@@ -30,14 +30,17 @@ export default async function handler(req: any, res: any) {
       return res.status(404).send('Game not found');
     }
 
-    const links = game.downloadLinks || {};
-    const downloadUrl = links.apk1 || links.apk2 || (links.mirrors && links.mirrors[0]);
+    // Roblox harici oyunlar: otomatik olarak Google Play sayfasına yönlendir.
+    // playStoreUrl tanımlıysa onu kullan, yoksa paket adından üret.
+    const playUrl =
+      game.downloadLinks?.playStoreUrl ||
+      (game.package && `https://play.google.com/store/apps/details?id=${game.package}`);
 
-    if (downloadUrl) {
-      return res.redirect(302, downloadUrl);
+    if (playUrl) {
+      return res.redirect(302, playUrl);
     }
 
-    return res.status(404).send('Download URL not found for this game');
+    return res.status(404).send('Play Store URL not found for this game');
   } catch (error) {
     console.error('Download resolve error:', error);
     return res.status(500).send('Internal Server Error');
