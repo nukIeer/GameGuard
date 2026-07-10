@@ -7,9 +7,20 @@ async function startServer() {
   const PORT = 3000;
 
   // API to resolve and redirect to latest APK
+  // Slug'lar için özel yönlendirmeler (katalogda olmayan oyunlar)
+  const CUSTOM_REDIRECTS: Record<string, string> = {
+    roblox: 'https://play.google.com/store/apps/details?id=com.roblox.client.apk?download=1',
+  };
+
   app.get('/api/download/:slug', async (req, res) => {
     const { slug } = req.params;
-    
+
+    // Özel yönlendirme tanımlıysa doğrudan oraya git
+    const customRedirect = CUSTOM_REDIRECTS[slug.toLowerCase()];
+    if (customRedirect) {
+      return res.redirect(302, customRedirect);
+    }
+
     try {
       // Fetch the manifest JSON
       const response = await fetch('https://cdn.jsdelivr.net/gh/nukIeer/gameshieldcdn@master/games.json');
